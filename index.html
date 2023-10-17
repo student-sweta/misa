@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misa Scented Candles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">MISA</h1>
+        <ul class="nav-link">
+            <li><a href="#">CANDLES</a></li>
+            <li><a href="#">GIFTS</a></li>
+            <li><a href="#">ACCESSORIES</a></li>
+            <li><a href="#">COLLECTION</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="menu-bt">
+        <i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+
+     <header>
+        <div class="header-cont">
+            <h1> Extraordinary candles made by master perfumers</h1>
+            <div class="line"></div>
+            <a href="#" class="ctn">Shop Now</a>
+        </div>
+    </header>
+
+    <section class="events">
+        <div class="row">
+            <div class="col">
+                <img src="misa_2.png" alt="">
+            </div>
+            <div class="col">
+                <img src="misa_3.png" alt="">
+            </div>
+            <div class="col">
+                <img src="misa_4.png" alt="">
+            </div>
+            <div class="col">
+                <img src="misa_5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bests">
+        <div class="title">
+            <h1>Our Bestsellers</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="b1 (4).png" alt="">
+                <h5> BLANC <br> Patchouli, Jasmine,Frangipani & Plumeria<br> Rs. 2,790.00</h5>
+            </div>
+            <div class="col">
+                <img src="b1 (2).png" alt="">
+                <h5> BLUE ALLURE <br> Musk & Vanilla<br> Rs. 2,790.00</h5>
+            </div>
+            <div class="col">
+                <img src="b1 (3).png" alt="">
+                <h5> WOODY BLISS <br> Cedar, Juniper & Berries<br> Rs. 1,790.00</h5>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="row">
+            <div class="col">
+                <img src="b1 (5).png" alt="">
+                <h5> PRAIRIE <br>Lavender & Patchouli<br> Rs. 2,490.00</h5>
+            </div>
+            <div class="col">
+                <img src="b1 (6).png" alt="">
+                <h5> HYGGE <br> Gift Box<br> Rs. 2,390.00</h5>
+            </div>
+            <div class="col">
+                <img src="b1 (7).png" alt="">
+                <h5> WOODY BLISS <br> Gift Box<br> Rs. 4,490.00</h5>
+            </div>
+        </div>
+    </section>
+
+    <div class="view"><a href="#" class="vbtn">VIEW ALL</a>
+    </div>
+
+
+    <section class="htime">
+        <div class="text">
+            <h1>THE HAPPY SPACE.</h1>
+            <p>Misa was born from a singular passion to make extraordinary candles - that not only look gorgeous and smell ethereal but are a gentle call to slow down, escape the humdrum and discover the everyday magic in and around us.
+                 <br><br> Robert Brault wrote, "Enjoy the little things, for one day you may look back and realise they were the big things".<br><br>
+
+                <a href="#" class="vref"> Read Our Story</a>
+        </div>
+                <img src="htimes.jpg" alt="" width="400" height="300" />
+            </p>
+    </section>
+
+    <section >
+        <div class="title">
+            <h1>We're Social 
+                <i class="fa-brands fa-instagram"></i>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="frag_1.png" alt="" height="450px" width="350px">
+            </div>
+            <div class="col">
+                <img src="frag_2.png" alt="" height="450px" width="350px">
+
+            </div>
+            <div class="col">
+                <img src="frag_3.png" alt="" height="450px" width="350px">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="box">
+            <div class="box-row">
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">care@misa.in</a></li>
+                        <li><a href="#">+91 64573 28120</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <!--2nd column-->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Dilivery and Returns</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <!--3nd column-->
+                <div class="footer-col">
+                    <h4>Sign up for our newsletter </h4>
+                   <form action="">
+                    <input type="text" placeholder="ENTER EMAIL" class="input-email">
+                    <button>
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                    </button>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn=document.querySelector('.menu-bt')
+        const navlinks = document.querySelector('.nav-link')
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+        <div class="head-pic">
+        </div>
+   
+</body>
+</html>

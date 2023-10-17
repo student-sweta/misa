@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.logo{
+    margin-left: 50px;
+    letter-spacing: 15px;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+.nav-link li{
+    margin: 0 30px;
+}
+.nav-link li a{
+    padding: 0 10px;
+    position: relative;
+}
+.nav-link li a:after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: #fc036b;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.nav-link li a:hover::after{
+    width: 100%;
+}
+header{
+    height: 100vh;
+    background-image: url("misa_1.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-cont{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-cont h1{
+    font-size: 7vmin;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.line{
+    width: 200px;
+    height: 4px;
+    background: #fc036b;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+.menu-bt{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+section{
+    width: 100%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #61605f;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.events .row .bests {
+    margin-top: 50px;
+}
+h1{
+    margin: 40px auto;
+}
+h5{
+    font-size: 2vmin;
+    color: #4e4d4c;
+    margin: 20px, auto;
+    text-align: center;
+}
+.view{
+    text-align: center;
+}
+.vbtn{
+    padding: 10px 150px;
+    background: #111111;
+    color: whitesmoke;
+    margin: 450px;
+}
+
+.htime h1{
+    margin: 0;
+    font-size: 6vmin;
+    color: #4e4d4c;
+    font-weight: 300;
+}
+.htime p{
+    padding: 0;
+    color: #61605f;
+    font-weight: 200;
+    margin-right: 20px;
+}
+.htime {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 70%;
+    margin: 10rem auto 0 auto;
+}
+.vref{
+    color: #111111;
+    text-decoration: underline;
+    
+}
+footer .box{
+    background-color: rgb(34, 33, 33);
+}
+.box-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px;
+}
+.footer-col ul{
+    list-style: none;
+}    
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    position: relative;
+}
+.footer-col ul li {
+    padding: 10px 0;
+}
+.footer-col ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footer-col ul li a:hover{
+    cursor: pointer;
+}
+.footer-col input{
+    border: none;
+    width: 200px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+.footer-col button{
+    
+    width: 40px;
+    height: 40px;
+    background-color: #a0a09f;
+    border: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+/* Mobile screen */
+
+@media only screen and (max-width:850px){
+    .menu-bt{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #c99b05;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-link li{
+        margin: 30px auto;
+    }
+    
+}
