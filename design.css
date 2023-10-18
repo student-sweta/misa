@@ -234,5 +234,12 @@ footer .box{
     .nav-link li{
         margin: 30px auto;
     }
-    
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
 }
